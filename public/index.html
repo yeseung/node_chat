@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="user-container">
+            <label for="nickname">대화명</label>
+            <input type="text" id="nickname">
+    </div>
+    <div class="display-container">
+        <ul class="chatting-list">
+            <li class="sent">
+                <span class="profile">
+                    <span class="user">호호</span>
+                    <img class="image" src="https://avatars.githubusercontent.com/u/2931591?v=4" width="50" height="50" alt="any">
+                </span>
+                <span class="message">test1111</span>
+                <span class="time">오후 11:00</span>
+            </li>
+            <li class="received">
+                <span class="profile">
+                    <span class="user">호호</span>
+                    <img class="image" src="https://avatars.githubusercontent.com/u/2931591?v=4" width="50" height="50" alt="any">
+                </span>
+                <span class="message">test1111</span>
+                <span class="time">오후 11:00</span>
+            </li>
+        </ul>
+    </div>
+    <div class="input-container">
+        <span>
+            <input type="text" class="chatting-input">
+            <button class="send-button">전송</button>
+        </span>
+        
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+</html>
